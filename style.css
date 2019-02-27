@@ -44,6 +44,14 @@ body {
 	background-image: linear-gradient(to bottom, #ffffff, #f3f1f3, #e8e3e4, #ddd6d4, #d0c9c4);
 }
 
+table{
+    border-collapse: collapse;
+    text-align: left;
+}
+.firstLine td{
+    border-bottom: 2px solid black;
+}
+
 .staticfooter {
 	padding: 20px;
 	position: fixed;
@@ -61,3 +69,4 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
