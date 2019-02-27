@@ -30,6 +30,10 @@ html {
 	margin: auto;
 	position: absolute;
 	background-color: #1E2323;
+	
+	-webkit-box-shadow: 18px 4px 93px 1px rgba(0,0,0,0.22);
+	-moz-box-shadow: 18px 4px 93px 1px rgba(0,0,0,0.22);
+	box-shadow: 18px 4px 93px 1px rgba(0,0,0,0.22);
 }
 
 .logolink{
