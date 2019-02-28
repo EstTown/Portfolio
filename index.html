@@ -6,6 +6,8 @@ https://mycolor.space/gradient?ori=to+bottom&hex=%23FFFFFF&hex2=%23D0C9C4&sub=1
 	<head>
 		<title>Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="flipperscript.js"></script>
+</script>
 	</head>
 	<body>
 		<div class="banner">
@@ -13,35 +15,44 @@ https://mycolor.space/gradient?ori=to+bottom&hex=%23FFFFFF&hex2=%23D0C9C4&sub=1
 		</div>
 
 		<div class="content">
-			<table align="center" style="width: 100%">
-				<tr class="firstLine">
-					<th>Project</th>
-					<th>Year</th>
-					<th></th>
-				</tr>
-				<tr>
-					<td colspan="3"><hr/></td>
-				</tr>
-				<tr>
-					<td>DDOS Mitigation Protocol</td>
-					<td>Fall 2017</td>
-					<td>
-						<div style="position: absolute;">
-							<a href="https://github.com/EstTown/P5ReactionProtocol" target="_blank" class="arrow"></a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>Stegomatic</td>
-					<td>Spring 2016</td>
-					<td>
-						<div style="position: absolute;">
-							<a href="https://github.com/EstTown/Stegomatic" class="arrow" target="_blank"></a>
-						</div>
-					</td>
-				</tr>
-			</table>
+			<div id="innercontent">
+				<div class="front">
+					<table align="center" style="width: 100%">
+						<tr class="firstLine">
+							<th>Project</th>
+							<th>Year</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td colspan="3"><hr/></td>
+						</tr>
+						<tr>
+							<td>DDOS Mitigation Protocol</td>
+							<td>Fall 2017</td>
+							<td>
+								<div style="position: absolute;">
+									<a href="https://github.com/EstTown/P5ReactionProtocol" target="_blank" class="arrow"></a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Stegomatic</td>
+							<td>Spring 2016</td>
+							<td>
+								<div style="position: absolute;">
+									<a href="https://github.com/EstTown/Stegomatic" class="arrow" target="_blank"></a>
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+				<div class="back">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus tincidunt orci, eu tempus erat euismod sit amet. Donec turpis eros, consequat id lacinia quis, fringilla in mauris. Donec in condimentum urna, in tincidunt quam. Vestibulum rutrum dolor in aliquet volutpat. Pellentesque ut augue at urna sollicitudin condimentum et at elit. Morbi aliquet tristique nisl eu rutrum. Aliquam ultrices sit amet mauris in lobortis. Vivamus aliquet iaculis velit id tempor. Donec mollis porttitor tellus, consequat bibendum arcu accumsan sit amet. Fusce placerat elit a eros sodales suscipit. Vivamus efficitur sem quis ex consequat gravida.
 
+
+				</div>
+			</div>
 		</div>
 
 		<div class="staticfooter">
@@ -59,10 +70,12 @@ https://mycolor.space/gradient?ori=to+bottom&hex=%23FFFFFF&hex2=%23D0C9C4&sub=1
 			</div>
 		</div>
 
-	</body>
+	</body><button id="flip" onclick="flipper()">Flip</button>
 	<div id="particles-js"></div>
 	<script src="particles.js"></script>
 	<script src="js/app.js"></script>
+	
+	
 
 
 </html>
