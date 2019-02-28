@@ -3,6 +3,6 @@ function flipper() {
 	var btn = document.querySelector('#btnflipper')
 	card.classList.toggle('flipped');
 	
-	if (btn.innerText=="About me") btn.innerText = "See Projects";
+	if (btn.innerText=="About me") btn.innerText = "Back to Projects";
     else btn.innerText = "About me"
 }
