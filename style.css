@@ -1,13 +1,8 @@
-html {
-    height: 105%;
-}
-
 .banner {
 	text-align: center;
 	color:  #2F3637;
 	font-family: Helvetica;
 	font-size: 24px;
-	margin: auto;
 }
 
 .content {
@@ -17,11 +12,9 @@ html {
 	color: #C9C5C1;
 
 	width: 500px;
-	height: 70%;
-	padding: 45px;
+	height: 800px;
+	padding: 40px;
 
-	top: 0;
-	bottom: 0;
 	left: 0;
 	right: 0;
 
@@ -37,7 +30,6 @@ html {
 	box-shadow: 18px 4px 93px 1px rgba(0,0,0,0.22);
 
 	perspective: 1000px;
-
 }
 
 #innercontent {
@@ -66,6 +58,7 @@ html {
 
 .back {
 	transform: rotateY(180deg);
+	text-align: left;
 }
 
 .logolink{
@@ -78,6 +71,7 @@ html {
 body {
 	background-repeat: no-repeat;
 	background-image: linear-gradient(to bottom, #ffffff, #f3f1f3, #e8e3e4, #ddd6d4, #d0c9c4);
+	background-attachment: fixed;
 }
 
 table{
@@ -104,8 +98,6 @@ tr{
 }
 
 #particles-js{
-	width: 100%;
-	height: 110%;
 	background-image: url('');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -178,7 +170,7 @@ tr{
 }
 #btnflipper:active {
 	position:relative;
-	top:1px;
+	top:2px;
 }
 
 #btnflipper:focus {
@@ -190,4 +182,28 @@ tr{
 	padding-bottom: 20px;
 }
 
+#btnflipper span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+#btnflipper span:after {
+  content: '\2192';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+#btnflipper:hover span {
+  padding-right: 25px;
+}
+
+#btnflipper:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
