@@ -5,6 +5,14 @@
 	font-size: 24px;
 }
 
+a:link {
+	color: #d0c9c4;
+}
+
+a:visited {
+	color: #e8e3e4;
+}
+
 .content {
 	text-align: center;
 	font-family: Helvetica;
