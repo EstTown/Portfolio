@@ -7,6 +7,14 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
+function isMobile() {
+    if (typeof window.orientation == 'undefined'){
+      return true;
+    } else {
+      return false;
+    }
+}
+
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
@@ -1513,7 +1521,7 @@ window.particlesJS = function(tag_id, params){
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);
 
   /* launch particle.js */
-  if(canvas != null){
+  if(canvas != null && isMobile()){
     pJSDom.push(new pJS(tag_id, params));
   }
 

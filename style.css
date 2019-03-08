@@ -77,10 +77,15 @@ a:visited {
 
 .logolink{
 	display: inline;
-  	vertical-align: top;
-  	float: none;
-  	padding: 15px;
+  	padding: 20px;
 }
+
+#footerimage{
+	min-width: 80px;
+	max-width: 10%;
+	width: 8%;
+}
+
 
 body {
 	background-repeat: no-repeat;
@@ -145,6 +150,11 @@ tr{
 	transform: translate(-40%,-60%) rotate(45deg);
 	width: 200%;
 	height: 200%;
+}
+
+#arrowcontainer {
+	position: absolute; 
+	right: 10px;
 }
 
 #btnflipper {
